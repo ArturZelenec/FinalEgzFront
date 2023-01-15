@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Filmoteka</title>
+</head>
+<body>
+    <main class="container main-class">
+        <header class="main-header">
+            <h1 class="header-h1">Filmoteka</h1>
+            <nav>
+                <!-- <a href="./index.html">Pradinis</a>
+                <a href="./menu.html" class="active">Filmai</a> -->
+                
+                <a href="./film-create.html">Filmo Registracija</a>
+                <a href="./film-update.html" class="active">Atnaujinti Filma</a>
+                <a href="./get-user-films.html">Userio Filmai</a>
+                <a id="logout_label" href="./index.html" style = "margin-left: 80px;">Atsijungti</a>
+            </nav>
+        </header>
+        <article>
+            <h2>Filmo Atnaujinimas</h2>
+            <p class="error-message"></p>
+            <form id="film-update-form">
+                <label for="isbn">Filmo kodas</label>
+                <input type="text" name="isbn" id="isbn" placeholder="Filmo kodas"><br><br>
+                <label for="title">Title</label>
+                <input type="text" name="title" id="title" placeholder="Title"><br><br>
+                <label for="director">Director</label>
+                <input type="text" name="director" id="director" placeholder="Director"><br><br>
+                <label for="release">Release</label>
+                <input type="date" name="releaseDate" id="release" placeholder="Release"><br><br>
+                <label for="filmFormat">Film format</label>
+                <input type="text" name="formatType" id="filmFormat" placeholder="Film format"><br><br>
+                <input type="button" id="film-update-form-submit" value="Update">
+            </form>
+        </article>
+    </main>
+    <script src="js/app-film-update.js"></script>
+</body>
+</html>

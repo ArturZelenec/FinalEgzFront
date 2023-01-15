@@ -1,0 +1,205 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    color: #444;
+    font-family: sans-serif;
+    border-top: 10px solid #0c0c0c;
+    position: relative;
+}
+
+/* Itakoja visus elementus, kurie turi .container klase */
+/* .container {
+    border: 1px solid black;
+    width: 800px;
+    margin: 0 auto;
+} */
+
+/* Itakoja tik main, kuris turi .container klase */
+/* main.container yra daug stipriau nei .container del to stilius visada prioriteta detu main.container */
+main.container {
+    width: 800px;
+    /* Centruoja konteineri */
+    margin: 0 auto;
+}
+
+/* Prioritetas dedamas pagal eiliskuma ir pagal Selector tiksluma */
+/* .main-class {
+    width: 100px;
+}
+
+main {
+    width: 200px;
+} */
+
+main header.main-header {
+    background-color: #c1936b6f;
+    padding: 20px 40px;
+    margin-bottom: 60px;
+}
+
+nav {
+    font-size: 18px;
+}
+
+h1,
+h2,
+h3 {
+    color: #0b0b0b;
+}
+
+h1 {
+    font-size: 26px;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+h4 {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+p {
+    font-size: 22px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+ul,
+ol {
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+li {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+li:last-child {
+    margin-bottom: 0px;
+}
+
+#author {
+    font-style: italic;
+    font-size: 18px;
+}
+
+#copyright {
+    font-size: 8px;
+}
+
+.related-author {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.related {
+    list-style: none;
+}
+
+.menu-item-picture > img {
+    max-width: 200px;
+    height: 90px;
+}
+
+li:first-child {
+    font-weight: bold;
+}
+
+li:last-child {
+    font-style: italic;
+}
+
+li:nth-child(even) {
+    color:darkslategrey;
+}
+
+article p:first-child {
+    color: red;
+}
+
+a:link {
+    color:#1098ad;
+    text-decoration: none;
+}
+
+a:visited {
+    color:#1098ad;
+}
+
+a:hover {
+    color: orangered;
+    font-weight: bold;
+    text-decoration: underline orangered;
+}
+
+a:active {
+    background-color: black;
+    font-style: italic;
+}
+
+nav a:link {
+    margin-right: 30px;
+    margin-top: 20px;
+}
+
+a.active {
+    text-decoration: underline;
+    font-weight: 700;
+    color: #0b6d7d;
+}
+
+#menu-items {
+    background-color: #f7f7f7;
+    min-height: 600px;
+}
+
+.menu-h-section h2 {
+    margin: 20px;
+}
+
+.menu-item {
+    display: flex;
+}
+
+.menu-item-info {
+    padding: 15px;
+}
+
+.menu-item-name h3 {
+    margin: 0;
+}
+
+input[type="text"], input[type="password"] {
+    border: 1px solid black;
+    background-color: rgb(240, 236, 230);
+    display: block;
+    padding: 3px;
+    margin-top: 5px;
+}
+
+label::after {
+    content: ":";
+}
+
+input[type="button"] {
+    padding: 10px;
+    background-color: #0b6d7d;
+    color: white;
+    border-radius: 5px;
+}

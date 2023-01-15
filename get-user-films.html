@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Filmoteka</title>
+</head>
+<body>
+    <main class="container main-class">
+        <header class="main-header">
+            <h1 class="header-h1">Filmoteka</h1>
+            <nav>
+                <!-- <a href="./index.html">Pradinis</a>
+                <a href="./menu.html" class="active">Filmai</a> -->
+                
+                <a href="./film-create.html">Filmo Registracija</a>
+                <a href="./film-update.html">Atnaujinti Filma</a>
+                <a href="./get-user-films.html" class="active">Userio Filmai</a>
+                <a id="logout_label" href="./index.html" style = "margin-left: 70px;">Atsijungti</a>
+
+            </nav>
+        </header>
+        <article>
+            <hr>
+            <section>
+                <h2>Sveiki, atvykę į Filmoteka</h2>
+            </section>
+            <hr>
+            <section id="menu-items">
+                <article class="menu-item">
+                    <section class="menu-item-picture">
+                        <img src="film-596519_640.jpg" alt="placeholder image">
+                    </section>
+                    <section class="menu-item-info">
+                        <section class="menu-item-name">
+                            <h3>Pavyzdinis pavadinimas</h3>
+                        </section>
+                        <section class="menu-item-desc">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores libero inventore porro deleniti eaque ex facilis laboriosam aut veniam earum velit, voluptas voluptatum? Recusandae deleniti sapiente autem maxime, ipsam dolorem?
+                        </section>
+                        <section class="menu-item-price">
+                            Kaine: 10 eur.
+                        </section>
+                    </section>
+                </article>
+                
+            </section>
+        </article>
+    </main>
+    <script src="js/get-user-films.js"></script>
+</body>
+</html>

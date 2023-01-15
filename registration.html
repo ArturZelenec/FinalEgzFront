@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Filmoteka</title>
+</head>
+<body>
+    <main class="container main-class">
+        <header class="main-header">
+            <h1 class="header-h1">Filmoteka</h1>
+            <nav>
+                <a href="./index.html">Pradinis</a>
+                <a href="./menu.html">Filmai</a>
+                <a href="./registration.html" class="active">Registracija</a>
+                <a href="./login.html">Prisijungimas</a>
+            </nav>
+        </header>
+        <article>
+            <h2>Filmotekos Vartotojo Registracija</h2>
+            <p class="error-message"></p>
+            <form id="registration-form">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" placeholder="Username"><br><br>
+                <label for="name">Name</label>
+                <input type="text" name="fullname" id="name" placeholder="FullName"><br><br>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Password"><br><br>
+                <label for="role">Role</label>
+                <input type="text" name="role" id="role" placeholder="Role"><br><br>
+                <input type="button" id="registration-form-submit" value="Register">
+            </form>
+        </article>
+    </main>
+    <script src="js/app-registration.js"></script>
+</body>
+</html>
