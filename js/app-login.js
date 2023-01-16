@@ -34,7 +34,7 @@ function sendData() {
         var resBody = await res.json();
         console.log(resBody)
         window.localStorage.setItem('token', resBody.token);
-        window.localStorage.setItem('userId', resBody.token);//
+        window.localStorage.setItem('userId', resBody.user.id);//
 
 
         window.location.href = "film-create.html";

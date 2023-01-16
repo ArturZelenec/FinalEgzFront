@@ -17,31 +17,24 @@
                 <!-- <a href="./index.html">Pradinis</a>
                 <a href="./menu.html" class="active">Filmai</a> -->
                 
-                <a href="./film-create.html" class="active">Filmo Registracija</a>
+                <a href="./film-create.html">Filmo Registracija</a>
                 <a href="./film-update.html">Atnaujinti Filma</a>
                 <a href="./get-user-films.html">Userio Filmai</a>
-                <a href="./delete-film.html">Istrinti filma</a>
+                <a href="./delete-film.html" class="active">Istrinti filma</a>
                 <a id="logout_label" href="./index.html" style = "margin-right: 5px;">Atsijungti</a>
             </nav>
         </header>
         <article>
-            <h2>Filmo Registracija</h2>
+            <h2>Filmo Trinimas</h2>
             <p class="error-message"></p>
-            <form id="film-create-form">
+            <form id="film-delete-form">
                 <label for="isbn">Filmo kodas</label>
                 <input type="text" name="isbn" id="isbn" placeholder="Filmo kodas"><br><br>
-                <label for="title">Title</label>
-                <input type="text" name="title" id="title" placeholder="Title"><br><br>
-                <label for="director">Director</label>
-                <input type="text" name="director" id="director" placeholder="Director"><br><br>
-                <label for="release">Release</label>
-                <input type="date" name="release" id="release" placeholder="Release"><br><br>
-                <label for="filmFormat">Film format</label>
-                <input type="text" name="filmFormat" id="filmFormat" placeholder="Film format"><br><br>
-                <input type="button" id="film-create-form-submit" value="Create">
+                
+                <input type="button" id="film-delete-form-submit" value="Delete">
             </form>
         </article>
     </main>
-    <script src="js/app-film-create.js"></script>
+    <script src="js/app-film-delete.js"></script>
 </body>
 </html>

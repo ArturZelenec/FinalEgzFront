@@ -1,5 +1,5 @@
 const menuContainer = document.getElementById('menu-items');
-const url = 'https://localhost:7211/api/UserFilm/Get/1';
+const url = 'https://localhost:7211/api/UserFilm/Get/'+ localStorage.getItem("userId");
 // const options = {
 //     method: 'get'
 //}
@@ -37,7 +37,6 @@ const response = {};
 //          let visiDuomenys = "";
 
  
-
 //       a.films.forEach((element) => {
 
 //         console.log(element);
@@ -97,7 +96,6 @@ function loadData() {
                     <section class="menu-item-desc">
                        Pavadinimas: ${element.filmTitle} <br/> Režisierius: ${element.filmDirector}
                     </section>
-                   
                 </section>
             </article>`;
             htmlMenuItem += htmlElement;
