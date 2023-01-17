@@ -28,7 +28,7 @@ function sendData() {
         if(res.ok)
         {
             // If success
-            window.location.href = "./index.html";
+            window.location.href = "./login.html";
         }
         
         console.log(res);
